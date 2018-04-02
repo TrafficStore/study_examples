@@ -1,0 +1,36 @@
+this is useful binaries for bot developing
+
+bash
+curl
+wget
+perl
+busybox
+echo
+ps
+sed
+gawk
+grep
+tor
+xdotool
+xrand
+cnee
+firefox
+apg
+bc
+
+
+Also bot have alot of additional functions like
+-start browser
+-save page code
+-upload files to webdav
+-send messages to telegramm bots
+-change cookies
+-change resolution
+-change User Agents
+-mouse move with cnee
+-mouse move and click with xdotool
+-setup proxies http,socks
+-work with tor
+
+
+This list will expand

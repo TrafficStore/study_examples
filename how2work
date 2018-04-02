@@ -1,0 +1,23 @@
+in this small paper I will show you in two words how write script for bot
+and upload it to server.
+
+At first please register at trafficstore.com and get you API-KEY
+
+Then you must create project. In project we will put tasks. Project can be created by API or in private kabinit.
+Let's create it by API
+
+curl -X POST -H "Content-Type: application/json" -H "X-SERVICE-KEY:YOUR_KEY" "https://api.trafficstore.com/project/add" -d '{ "name" : "ttt" }'
+
+{"success":true,"project":{"id":"4195849"}}
+Now we have project_id 4195849. Remember it.
+
+Let's go to the examples directory. There is on script, which helps you to upload you script write_script2db.sh. It is 
+very easy script, which generates json and send it to server thru api.
+
+Usage example
+./write_script2db.sh 4195849 ./write_data2telegram/write_data2telegram.sh
+
+4195849 - project id
+./write_data2telegram/write_data2telegram.sh - your script
+
+if your script uploaded successfully you get ID of the task. Using this ID you can check status ot get results.
